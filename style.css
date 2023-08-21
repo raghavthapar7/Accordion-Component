@@ -19,18 +19,22 @@ body {
 }
 
 .item {
-}
+  padding: 24px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
 
-.two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  justify-content: center;
+  align-items: center;
 }
 
 .number,
 .question {
   font-weight: 600;
   color: #087f5b;
-}
-
-.question {
 }
 
 .icon {
@@ -41,6 +45,7 @@ body {
 
 .hidden-box {
   font-size: 16px;
+  grid-column: 2;
 }
 
 .hidden-box p {
