@@ -32,18 +32,26 @@ body {
   row-gap: 32px;
   justify-content: center;
   align-items: center;
+
+  transition: all 500ms ease-out;
 }
 
 .number,
 .question {
   font-weight: 600;
-  color: #087f5b;
+  /* color: #087f5b; */
+}
+
+.number {
+  color: #ced4da;
 }
 
 .icon {
   height: 32px;
   width: 32px;
   stroke: #087f5b;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .hidden-box {
@@ -67,4 +75,17 @@ body {
 
 .active > .hidden-box {
   display: block;
+}
+
+.active > .number,
+.active > .question {
+  color: #087f5b;
+}
+
+.active.item {
+  border-top: 5px solid #087f5b;
+}
+
+.active > .icon {
+  transform: rotate(180deg);
 }
