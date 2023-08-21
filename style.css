@@ -12,6 +12,8 @@ body {
 }
 
 .accordion {
+  width: 700px;
+  margin: 100px auto;
 }
 
 .item {
